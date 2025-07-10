@@ -1,0 +1,152 @@
+.aboutUs {
+    margin-bottom: -10.4rem;
+}
+.blandMode-bg {
+    background-attachment: fixed;
+    background-image: url(/images/cover-dark.jpg);
+    background-repeat: no-repeat;
+}
+.row {
+    --bs-gutter-x: 3.6rem;
+    --bs-gutter-y: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex
+;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    margin-left: calc(var(--bs-gutter-x) * -.5);
+    margin-right: calc(var(--bs-gutter-x) * -.5);
+    margin-top: calc(var(--bs-gutter-y) * -1);
+}
+
+.aboutUs-about__slider {
+    height: 23.5rem;
+    z-index: 2;
+}
+.aboutUs-about__slider_cover {
+    background: transparent url(/images/slide-cover.svg) 0 0 no-repeat padding-box;
+    background-position: 50%;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 2;
+}
+
+.aboutUs-about__slider .swiper__aboutUs {
+    -webkit-transform: rotate(1deg);
+    transform: rotate(1deg);
+    z-index: 3;
+}
+
+.swiper-container {
+    list-style: none;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    padding: 0;
+    position: relative;
+    z-index: 1;
+}
+
+.moscowSlide img {
+    border-radius: 25px;
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    height: 135px;
+    width: 187px;
+}
+.about-swiper .swiper-slide {
+    width: 90% !important;
+    opacity: 0.5;
+    transition: all 0.3s ease;
+}
+.about-swiper .swiper-slide-active {
+    width: 90% !important;
+    opacity: 1;
+}
+.about-swiper .swiper-slide-next {
+    width: 10% !important;
+    opacity: 0.7;
+}
+
+
+.px-8 {
+    padding-left: .8rem !important;
+    padding-right: .8rem !important;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl, .container-xxl {
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: var(--bs-gutter-x, 1.8rem);
+    padding-right: var(--bs-gutter-x, 1.8rem);
+    width: 85%;
+}
+
+.h-100 {
+    height: 63% !important;
+}
+.about-swiperimg {
+    display: flex;
+    justify-content: end;
+}
+.swiper-container {
+    padding-top: 0px !important;
+}
+.moscowImageSlide {
+    margin-left: 10px !important;
+}
+
+.halls-swiper .swiper-slide {
+    width: 100%;
+    max-width: 560px;
+    height: 490px;
+    transition: transform 0.3s ease, opacity 0.3s ease, height 0.3s ease;
+    opacity: 0.5;
+    transform: scale(0.7);
+}
+.halls-swiper .swiper-wrapper {
+    display: flex;
+}
+
+.halls-swiper .swiper-slide-active {
+    transform: scale(1);
+    opacity: 1;
+    z-index: 3;
+    width: 560px !important;
+    border-radius: 50px !important;
+}
+.halls-swiper .swiper-slide-next,
+.halls-swiper .swiper-slide-prev {
+    transform: scale(0.85);
+    opacity: 0.8;
+    z-index: 2;
+}
+
+.halls-swiper .swiper-slide-next + .swiper-slide,
+.halls-swiper .swiper-slide-prev + .swiper-slide-prev {
+    transform: scale(0.75);
+    z-index: 1;
+    opacity: 0.6;
+}
+.halls-swiper .swiper-slide img {
+    width: 100%;
+    height: 100%;
+    /* object-fit: cover; */
+    display: block;
+    border-radius: 50px;
+}
+
+.moscowCinemaImage {
+    height: 295px;
+    width: 338px;
+}
+.carousel-item img {
+    height: 472px !important;
+}
+.carousel-control-prev {
+    left: 401px !important;
+}
+.carousel-control-next {
+    right: 401px !important;
+}

@@ -1,0 +1,1324 @@
+body {
+    line-height: 0;
+    background: #191919;
+}
+.allparent {
+    background-color: #191919;
+    height: 76px;
+    z-index: 15;
+    position: relative;
+}
+
+.movesActivParent {
+    width: 100%;
+    background:#191919;
+
+}
+.moveList {
+    color: var(--mode-light);
+}
+.swiper {
+    margin:0
+}
+
+.headerContainer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 13px 100px;
+    max-width: 100%;
+    z-index: 15;
+    position: absolute;
+    background: transparent;
+    background-color: rgba(0, 0, 0, .5);
+}
+
+.movesNameContainer {
+    /* width: 100% !important; */
+    max-width: 100% !important;
+    background: #181818;
+    padding: 79px 84px 45px;
+}
+
+.LogoClass {
+    width: 73px;
+    height: 47px;
+}
+
+.our ul {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-size: 18px;
+    font-weight: 500;
+    font-family: 'Arian AMU Bold', sans-serif;
+
+}
+
+.our ul li {
+    font-family: 'Arian AMU Bold', sans-serif;
+    margin-right: 42px;
+}
+.design {
+    color: #555151;
+    justify-content: center;
+    display: flex;
+    align-items: center;
+}
+.subWord {
+    margin-right: 20px;
+}
+.UpcomingMovesTitle {
+    color: white;
+    font-family: 'Arian AMU Bold', sans-serif;
+
+}
+.UpcomingMovies {
+
+    padding-bottom: 66px;
+    padding-top: 80px;
+    width: 90%;
+    margin: 0 auto;
+}
+
+.followTitle {
+    width: 100%;
+    font-family: 'Arian AMU Bold', sans-serif;
+    font-size: 50px;
+    color: white;
+    align-items: center;
+    display: flex;
+    letter-spacing: 22px; 
+    line-height: 1.24;
+}
+
+.internet ul {
+    display: flex;
+    gap: 18px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.internet ul li {
+    width: 24px;
+    height: 24px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.internet ul li svg {
+    width: 24px;
+    height: 24px;
+    color: white;
+    fill: white;
+}
+
+.rotate-right {
+    transform: rotate(90deg);
+    transform-origin: center;
+}
+
+ul li {
+    color: white;
+}
+
+
+.carousel-control-next-icon {
+    display: none;
+}
+
+.carousel-control-prev-icon {
+    display: none;
+}
+
+.carousel-item {
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919)) 0 0 no-repeat padding-box;
+    position: relative;
+}
+
+.secondSwiperSlide {
+    position: relative;
+    overflow: hidden;
+}
+
+.secondSwipeImg {
+    width: 100%;
+    display: block;
+    transition: transform 0.5s ease;
+}
+
+.hoverdesc {
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.6); 
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transition: bottom 0.5s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.secondSwiperSlide:hover .hoverdesc {
+    bottom: 0;
+}
+
+.secondSwiperSlide:hover .secondSwipeImg {
+    transform: scale(1.05); 
+}
+
+.Card h5, .hoverdesc p {
+    margin: 10px 0;
+}
+
+
+.carousel-item img {
+    object-fit: cover;
+    -o-object-position: center;
+    object-position: center;
+    /* object-fit: contain; */
+    display: block;
+    width: 100%;
+    height: 1020px;
+    /* background: linear-gradient(#5a1f1f, #2c3173); */
+}
+
+
+.prevSwipeFirst {
+    right: 60px !important;
+}
+
+.upcomingSwipePrev{left: -62px;}
+.upcomingSwipeNext {
+    right: -55px;
+}
+.nextSwipeFirst {
+    right: 25px;
+}
+.carousel-item::after {
+    /* height: 706px; */
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    content: '';
+    width: 100%;
+    /* background: transparent -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919)) 0 0 no-repeat padding-box; */
+}
+
+.image-content::after {
+    border-radius: 25px;
+    content: "";
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, .45);
+    backdrop-filter: blur(12px);
+    /* border-radius: 10px; */
+    transition: bottom .25s ease, visibility .25s ease;
+    z-index: 2;
+    left: 0;
+}
+.image-content img {
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    display: block;
+}
+.special-pricePicture svg {
+    color: #00cedc;
+}
+
+.image-content:hover::after {
+    bottom: 0;
+    opacity: 1;
+
+}        
+.image-content .hover-text {
+    position: absolute;
+    bottom: 20px;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    color: white;
+    z-index: 3;
+    opacity: 0;
+    transform: translateY(20px);
+    transition: all 0.3s ease;
+    padding: 0 20px 0 20px;
+}
+.image-content .hover-text h3 {
+    margin: 0;
+    font-size: 22px;
+    font-family: 'Arian AMU Bold', sans-serif;
+    text-align:start;
+}
+.image-content .hover-text .button {
+    margin-top: 10px;
+    padding: 8px 16px;
+    background: transparent linear-gradient(160deg, #850000 10%, #006f77) 0 0 no-repeat padding-box;
+    border: none;
+    border-radius: 32px;
+    color: white;
+    cursor: pointer;
+    width:188px;
+    height:49px
+}
+
+.image-content .hover-text .button:hover {
+    background:-webkit-gradient(linear, left top, left bottom, from(#c50000), to(#390004)) no-repeat padding-box;
+}
+
+.Schedule-date--borderBlue {
+    background-color: #00cedc;
+    border-radius: 10rem;
+    -webkit-box-shadow: 0 .3rem .6rem 0 #000;
+    box-shadow: 0 .3rem .6rem 0 #000;
+    height: 2px;
+    width: 100%;
+}
+
+.image-content:hover .hover-text {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.table>tbody {
+    flex-direction: column;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table, table th, table td, table thead, table tbody, table tr {
+    border-top: none !important;
+    border-bottom: none !important;
+}
+
+table td {
+    border-left: 1px solid black;
+    border-right: 2px solid black;
+    border-top: none;
+    border-bottom: none;
+}
+
+table th {
+    border-left: 1px solid #191919;
+    border-right: 2px solid #191919;
+    border-top: none;
+    border-bottom: none;
+}
+
+.promo {
+    background-color: #191919;
+}
+
+.redLittleWindow {
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#e20c18), to(#630006)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #e20c18, #630006) 0 0 no-repeat padding-box;
+    border-radius: .4rem;
+    content: "";
+    height: 100%;
+    height: 1.35rem;
+    left: .2rem;
+    position: absolute;
+    top: .2rem;
+    -webkit-transform: matrix(.71, .71, -.71, .71, 0, 0);
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+    width: 1.35rem;
+}
+
+.redLittleWindow {
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-color: red;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+.table-striped>tbody>tr:nth-of-type(odd)>* {
+    padding-left: 30px;
+    justify-content: start;
+}
+
+.borderElTicket {
+    border-color: red;
+    color: #b00000;
+    -webkit-transition: all .3s ease;
+    transition: all .3s ease;
+    border-radius: 3.2rem;
+    -webkit-box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .7);
+    box-shadow: 0 .3rem 1rem rgba(0, 0, 0, .7);
+    line-height: 1.15;
+    width: 188px;
+    height: 50px;
+    font-family: 'Arian AMU Bold', sans-serif;
+
+}
+
+table tbody tr:nth-child(even) td {
+    justify-content: start;
+    padding-left: 30px;
+}
+
+.Schedule-date--borderDark:hover {
+    cursor: pointer;
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#e20c18), to(#630006));
+    background-image: linear-gradient(180deg, #e20c18, #630006);
+}
+
+table tbody tr:first-child {
+    background-color: #191919;
+    color: white;
+}
+
+table tbody tr:nth-child(even) {
+    background-color: #191919;
+    color: white;
+}
+
+table tbody tr:nth-child(even) td {
+    border: 1px solid #191919;
+}
+
+th, td {
+    padding: 20px;
+    text-align: center;
+    vertical-align: middle;
+}
+
+
+.table>:not(caption)>*>* {
+    align-items: center !important;
+    text-align: start;
+    justify-content: center;
+    display: flex;
+    background-color: #0a0a0a;
+    border-bottom-width:0;
+}
+
+.carousel-indicators [data-bs-target] {
+    border-bottom: 10px solid transparent;
+    opacity: .5;
+    background: #eee;
+    background-color: transparent;
+    border: .1rem solid #eee;
+    border-radius: 3px;
+    height: 10px;
+    width: 12px;
+    margin: 4px;
+    transform: matrix(.71, .71, -.71, .71, 0, 0);
+}
+
+.carousel-indicators .active {
+    background-color: #eeeeee; 
+    opacity: 1;
+}
+
+.movesName {
+    font-size: 30px;
+    color: white;
+}
+
+.preview-container {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.preview-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    border: 1px solid #ccc;
+    padding: 5px;
+    background: #f8f8f8;
+}
+.imgPArent:after {
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(rgba(25, 25, 25, 0)), to(#191919)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, rgba(25, 25, 25, 0), #191919) 0 0 no-repeat padding-box;
+    bottom: -.1rem;
+    content: "";
+    height: 100%;
+    left: 0;
+    position: absolute;
+    width: 100%;
+}
+.movePhotosSlides {
+    width: 100%;
+    border-radius:25px
+}
+
+.slide-container{
+    width: 100%;
+    padding: 0px 30px;
+    background:#191919
+}
+.prevSwipeFirst {
+    left: 35px !important;
+}
+
+.slide-content{
+    margin: 0px 53px;
+    overflow: hidden;
+    border-radius: 25px;
+}
+
+.card{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+.image-content,
+.card-content{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.image-content{
+    object-fit: contain;
+    height: 380px;
+    width: 258px;
+    position: relative;
+    overflow: hidden;
+}
+
+.movesSwiper {
+    height: 380px !important;
+    width: 258px !important; 
+    margin-left: 13px; 
+}
+
+.overlay::after{
+    border-radius: 25px;
+    background-color: #FFF;
+}
+
+.name{
+    font-size: 18px;
+    font-weight: 500;
+    color: #333;
+}
+.description{
+    font-size: 14px;
+    color: #707070;
+    text-align: center;
+}
+
+.Schedule-date--borderDark {
+    background-color: #272727;
+    border-radius: 10rem;
+    -webkit-box-shadow: 0 .3rem .6rem 0 #000;
+    box-shadow: 0 .3rem .6rem 0 #000;
+    height: 3px;
+    width: 100%;
+}
+.swiper-button-next:after, 
+.swiper-button-prev:after {
+    font-weight: 900;
+}
+
+.swiper-navBtn::before, 
+.swiper-navBtn::after {
+    color: #282828;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.swiper-button-next:hover:after {
+    color: #848484 !important;
+}
+.swiper-button-prev:hover:after {
+    color: #848484 !important;
+}
+
+
+
+
+.buttonTrailer {
+    background: transparent linear-gradient(160deg, #850000 10%, #006f77) 0 0 no-repeat padding-box;
+    border: none;
+    transition: all .3s cubic-bezier(0,0,0,1);
+    width: 188px;
+    height: 48px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px; 
+}
+
+.buttonTrailer:hover {
+    background: #b00000;
+}
+
+.buttonTrailer svg {
+    width: 30px;
+    height: 40px;
+    fill: #000;
+}
+
+
+.button:hover{
+    background: #265DF2;
+}
+
+.swiper-navBtn{
+    color: #6E93f7;
+    transition: color 0.3s ease;
+}
+
+.swiper-navBtn:hover{
+    color: #4070F4;
+}
+
+.swiper-navBtn::before,
+.swiper-navBtn::after{
+    color: #282828;
+    font-size: 40px;
+    font-weight: 900;
+}
+
+.prevSwipeFirst{
+    right: 0;
+}
+
+.swiper-pagination-bullet{
+    background-color: #6E93f7;
+    opacity: 1;
+}
+
+.swiper-pagination-bullet-active{
+    background-color: #4070F4;
+}
+.moveListContainer {
+    max-width: 100%;
+    padding: 0 0 30px 0;
+}
+.importPrice {
+    display: flex;
+    align-items: center;
+    gap:5px;
+    padding-bottom: 22px;
+}
+.special-pricePicture {
+    align-items: end;
+    display: flex;
+    padding-bottom:5px;
+}
+
+.todayTomorrow {
+    margin-bottom: 30px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.moveList {
+    background:#191919 ;
+    width: 100%;
+}
+tr:nth-child(2n) .borderElTicket {
+    background-color: #0a0a0a;
+    color: #b00000;
+    font-family: Arian AMU Bold, sans-serif;
+
+}
+tr:nth-child(odd) .borderElTicket {
+    background-color: #191919;
+    color: #b00000;
+}
+
+.promoSlayder {
+    width: 529px !important;
+    height: 462px !important;
+}
+    .table-dark {
+        --bs-table-striped-bg: #191919 !important;
+    }
+
+
+.date {
+    font-family: Arian AMU Bold, sans-serif;
+    font-style: normal;
+    font-weight: 700;
+    color: white;
+    font-size: 18px;
+    padding-bottom: 25px;
+}
+
+
+.Schedule-date--border {
+    background-color: #272727;
+    border-radius: 10rem;
+    -webkit-box-shadow: 0 .3rem .6rem 0 #000;
+    box-shadow: 0 .3rem .6rem 0 #000;
+    height: 3px;
+    width: 100%;
+    /* background-image: -webkit-gradient(linear, left top, left bottom, from(#e20c18), to(#630006)); */
+    /* background-image: linear-gradient(180deg, #e20c18, #630006); */
+}
+
+.listParent{
+    /* color: #BCBCBC; */
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    width: 9.6%;
+    justify-content: end;
+}
+tbody, td, tfoot, th, thead, tr {
+    width: 100%;
+    display: flex;
+}
+
+.promoWord {
+    font-weight: 600;
+    padding: 100px 0 44px;
+    color: white;
+}
+
+.upcomingSwiper{
+    gap:30px;
+    padding-top: 40px;
+}
+
+.promoSwiper {
+    justify-content: space-between;
+}
+
+.swiper-container {
+    padding-top: 40px;
+}
+
+.secondSwipeImg {
+    border-radius: 20px;
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+}
+
+.secondSwiperSlide {
+    width: 90% !important;
+    max-width: 529px;
+    position: relative;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+    transition: transform 0.3s ease;
+    margin-right: 0 !important;
+}
+
+.secondSwiperSlide:hover {
+    transform: scale(1.05);
+}
+
+.parent {
+    position: relative;
+    overflow: hidden;
+}
+
+.hoverdesc {
+    padding: 5%;
+    position: absolute;
+    bottom: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: blur(5px);
+    background-color: rgba(0,0,0,0.23);
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 1vw;
+    transition: bottom 0.3s ease;
+}
+
+.parent:hover .hoverdesc {
+    bottom: 0;
+}
+
+.descCardParent {
+    padding-bottom: 2%;
+    display: flex;
+    align-items: start;
+    flex-direction: column;
+}
+
+.Card {
+    padding-bottom: 2%;
+    width: 100%;
+    justify-content: center;
+    display: flex;
+}
+
+.descCardParent p {
+    font-size: 0.9vw;
+}
+
+.readerMoreparent {
+    align-items: center;
+    width: 100%;
+    justify-content: end;
+    display: flex;
+}
+
+.swiper {
+    padding-bottom: 120px;
+    /* max-width: 1917px; */
+    overflow: inherit !important;
+}
+
+
+
+
+
+.followInputPArent {
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.earthPicture {
+    width: 100%;
+}
+
+.emailInput {
+    color: white;
+    border: none;
+    width: 100%;
+    padding: 21px 26px 20px;
+    border-radius: 40px;
+    background-color: #463B36;
+}
+.justify-content-end {
+    align-items: center;
+}
+
+.emailInput::placeholder {
+    color: white;
+}
+
+.send {
+    backdrop-filter: blur(3rem);
+    background: transparent;
+    background-color: #463B36;
+    height: 58px;
+    padding: 14px 16.9px 13.9px 11px;
+    width: 58px;
+    border-radius: 30px;
+    margin: 0 18px 0;
+}
+
+.subscribeDescription {
+    width: 100%;
+    color: white;
+    font-family: 'Arian AMU Bold', sans-serif;
+}
+
+.send svg  {
+    width: 30px;
+    height: 30px;
+    transform: rotate(40deg);
+    fill: white;
+}
+
+.send {
+    border:none
+
+}
+
+.emailInputClass {
+    align-items: end;
+    display: flex;
+}
+
+.followForm {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+
+.hover-effect {
+    position: relative;
+    overflow: hidden;
+    width: 258px !important;
+    height: 380px !important;
+}
+
+.hover-effect img {
+    border-radius: 25px;
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.hover-effect::after {
+    border-radius: 25px;
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -100%;
+    width: 100%;
+    height: 100%;
+    transition: bottom 0.4s ease;
+    backdrop-filter: blur(5px);
+    background: rgba(0,0,0,0.4);
+    z-index: 1;
+}
+
+.hover-effect:hover::after {
+    bottom: 0;
+}
+
+.hover-effect h5,
+.hover-effect .info-line,
+.hover-effect button {
+    position: absolute;
+    z-index: 2;
+    left: 15px;
+    right: 15px;
+    color: white;
+    opacity: 0;
+    transition: opacity 0.4s ease;
+}
+
+.hover-effect button {
+    left: 35px;
+    border-radius: 30px;
+
+}
+
+.hover-effect h5 {
+    top: 178px;
+}
+
+.hover-effect .info-line {
+    top: 234px;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    padding-top: 10px;
+    font-size: 14px;
+    text-align: start;
+    margin: 0;
+    color: white;
+}
+
+.hover-effect .info-line .separator {
+    display: inline-block;
+    width: 1px;
+    height: 30px;
+    background: white;
+}
+
+.hover-effect button {
+    bottom: 20px;
+}
+.genre-text span {
+    align-items: center;
+    display: flex;
+    height: 15px;
+}
+.hover-effect:hover h5,
+.hover-effect:hover .info-line,
+.hover-effect:hover button {
+    opacity: 1;
+}
+
+footer .footer-line::before {
+    right: -3.8rem;
+}
+
+footer .footer-line:after, footer .footer-line:before {
+    background-color: var(--border-color);
+    border-radius: 50%;
+    content: "";
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 7.6rem;
+}
+
+footer .footer-line hr {
+    color: rgb(0, 0, 0);
+    background-color: rgb(0, 0, 0);
+}
+.dashboard-footer-line {
+    position: relative;
+    width: 100%;
+    height: 76px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 26px;
+    overflow: hidden;
+}
+
+.dashboard-footer-line::before,
+.dashboard-footer-line::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 80px;
+    height: 76px;
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+}
+
+.dashboard-footer-line::before {
+    right: -38px;
+}
+
+.dashboard-footer-line::after {
+    left: -38px;
+}
+
+.dashboard-footer-line .line {
+    width: 100%;
+    height: auto;
+    border: none;
+    border-bottom: 5px dashed rgb(0, 0, 0);
+    margin: 2rem 0;
+}
+footer .footer-line:after {
+    left: -3.8rem;
+}
+
+footer .footer-line:after, footer .footer-line:before {
+    background-color: rgb(0, 0, 0);
+    border-radius: 50%;
+    content: "";
+    height: 76px;
+    position: absolute;
+    top: 0;
+    width: 100px;
+}
+
+.logoWhite {
+    justify-content: center;
+    display: flex;
+    margin-bottom: 50px;
+}
+
+.footer-nav ul{
+    justify-content: center;
+    list-style: none;
+    width: 100%;
+    display: flex;
+    height: auto;
+    font-family: Arian AMU Bold, sans-serif;
+    
+}
+
+.footer-nav ul li {
+    margin-left: 30px;
+    margin-right: 50px;
+    margin-bottom: 35px;
+    font-family: Arian AMU Bold, sans-serif;
+}
+
+.directoryClassUl {
+    display: flex;
+}
+hr {
+    
+    margin: 2rem 0 !important;
+}
+
+.infoFooter ul  {
+    font-weight: 700;
+    height: auto;
+    list-style: none;
+    padding: 0;
+}
+
+.workDiv {
+    padding-bottom: 20px;
+    font-family: Arian AMU Bold, sans-serif;
+    font-weight: 600;
+}
+
+.infoFooterSecond ul{
+    color: white;
+    list-style: none;
+
+}
+
+.infoParent {
+    padding-bottom: 60px;
+    margin: 0 auto;
+    width: 80%;
+}
+
+.Directory {
+    /* gap: 10px; */
+    justify-content: space-evenly;
+    display: flex;
+}
+.infoFooter ul li {
+    height:30px;
+
+}
+.infoFooterSecond ul li {
+    height:30px;
+
+}
+
+.infoFooterParent{
+    display: flex;
+}
+
+.phoneParent li {
+    height: 20px !important;
+}
+
+.iconsFooter svg {
+    width: 13px;
+    height: 13px;
+    fill: white;
+    margin-left: 15px;
+}
+
+.town span {
+    color: white;
+    font-weight: 700;
+}
+.town p {
+    color: white;
+}
+
+.town {
+    justify-content: start;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infokinomoscowamParent {
+    align-items: end;
+    display: flex;
+    height: 60px;
+    font-family: 'Arian AMU Bold', sans-serif;
+
+}
+.swiper-button-lock {
+    display: block !important;
+}
+.swiper-button-next:after, .swiper-button-prev:after {
+    color: #282828 !important;
+    font-weight: 900;
+}
+
+.carousel-inner {
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919)) 0 0 no-repeat padding-box;
+    height: 100%;
+}
+.carousel-inner::after {
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #19191900, #191919) 0 0 no-repeat padding-box;
+    bottom: -.2rem;
+    content: "";
+    height: 100%;
+    height: calc(-30.4px + 23.5625vw);
+    left: 0;
+    position: absolute;
+    width: 100%;
+    z-index: 1;
+}
+
+.backgroundPArent {
+    height: 20px;
+    width: 100%;
+    background: transparent -webkit-gradient(linear, left top, left bottom, from(#19191900), to(#191919)) 0 0 no-repeat padding-box;
+    background: transparent linear-gradient(180deg, #19191900, #191919) 0 0 no-repeat padding-box;
+    bottom: -2px;
+}
+
+.carousel-indicators {
+    margin-bottom: 50px !important;
+}
+
+.listParent span {
+    color: #BCBCBC !important;
+}
+
+.importPrice p {
+    color: #BCBCBC !important;
+}
+
+.listParent:hover {
+    transform: scale(1.05);
+
+}
+.listParent:hover span {
+    color: white !important;
+}
+.listParent:hover p {
+    color: white !important;
+}
+
+.listParent:hover .Schedule-date--border {
+    background-color: red;
+}
+.listParent.active .Schedule-date--border {
+    background-color: red; 
+}
+.borderElTicket:hover {
+    background: red !important;
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.listParent {
+    cursor: pointer;
+}
+.sticky {
+    position: relative;
+    background-color: #222;
+    -webkit-box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, .3);
+    height: 50px;
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+    -webkit-transition: opacity .25s ease;
+    transition: opacity .25s ease;
+    width: 50px;
+    z-index: 1999;
+    border-radius: 50px;
+}
+
+.stickImage {
+    bottom: 5px;
+    left: 3px;
+    position: absolute;
+    right: 0px;
+    z-index: 2000;
+    color: white;
+    height: 40px;
+    position: absolute;
+    width: 30px;
+    transform: rotate(270deg);
+}
+.stickyParent {
+    padding-top: 22px;
+    position: sticky;
+    width: 100px;
+}
+.sticky:hover {
+    background-color: #6a6767;
+    cursor: pointer;
+
+}
+
+.swiper {
+    margin-top: -1px !important;
+}
+.swiper-wrapper {
+    display: flex;
+}
+
+.swiper-slide {
+    flex-shrink: 0;
+    width: auto;
+}
+.tu1 .swiper-wrapper {
+    display: flex;
+    flex-wrap: nowrap;
+}
+.tu1 .swiper-slide {
+    flex-shrink: 0;
+    width: auto; 
+}
+
+dl, ol, ul {
+    /* margin-bottom: 2rem !important; */
+}
+
+
+.sticky {
+    position: fixed;
+    bottom: 65px;
+    right: 20px;
+    z-index: 999;
+    padding: 10px;
+    border-radius: 50%;
+    box-shadow: 0 0 10px rgba(0,0,0,0.2);
+    cursor: pointer;
+}
+.hallsColor {
+    margin-right: 15px;
+}
+.swiper-slide {
+    border-radius: 25px !important;
+}
+a {
+    text-decoration: none !important;
+    color:white
+}
+.active a {
+    color: red;
+}
+.headerParent {
+    align-items: center;
+    height: 73px;
+    display: flex;
+    margin: 0 auto;
+    width: 84%;
+    background: transparent;
+}
+header {
+    background: transparent;
+    background-color: rgba(0, 0, 0, .5);
+}
+@media screen and (max-width: 768px) {
+.slide-content{
+    margin: 0 10px;
+}
+.swiper-navBtn{
+    display: none;
+}
+.card-wrapper {
+    margin: 0 10px 25px;
+}
+.card-wrapper .swiper-slide-button {
+    display: none;
+}
+
+.our ul {
+    font-size: 1rem;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.internet ul {
+    justify-content: center;
+}
+.container {
+    flex-direction: column;
+}
+}
+
+@font-face {
+    font-family: 'Arian AMU Bold';
+    src: url('/fonts/ArianAMU-Bold.ttf') format('truetype');
+    font-weight: 400;
+    font-style: normal;
+}
